@@ -8,6 +8,7 @@
 
     --themeDotBorder: #24292e;
     --previewShadowColor: rgb(236, 218, 162);
+    --shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 
 }
 
@@ -102,7 +103,7 @@ ul {
 .intro-wrapper {
     background-color: var(--secondaryColor);
     border: 1px solid var(--borderColor);
-    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: var(--shadow);
     border-radius: 5px 5px 0 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -130,7 +131,7 @@ ul {
     width: 30px;
     border: 2px solid var(--themeDotBorder);
     background-color: var(--mainText);
-    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: var(--shadow);
     border-radius: 50%;
     margin: 5px;
     cursor: pointer;
@@ -138,6 +139,7 @@ ul {
 
 .theme-dot:hover {
     border-width: 5px;
+    transition: .4s all ease;
 }
 
 .left-column {
@@ -161,7 +163,7 @@ ul {
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: var(--shadow);
     margin: 5px;
 
 }
@@ -197,6 +199,67 @@ ul {
     display: grid;
     align-content: center;
     text-align: center;
+}
+
+
+.post-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.post {
+    border: 1px solid var(--borderColor);
+    box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+}
+
+.thumbnail {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.post-preview {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.post-title {
+    color: black;
+    margin: 0;
+}
+
+.post-intro {
+    color: #4b5156;
+    font-size: 1rem;
+}
+
+.more-wrapper {
+    display: flex;
+    padding-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.more {
+    text-align: center;
+    background-color: var(--secondaryColor);
+    padding: 16px;
+    transition: .4s all ease-out;
+    box-shadow: var(--shadow);
+}
+
+.more:hover {
+    letter-spacing: 1.3px;
+    box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+}
+
+.more>h6 {
+    margin: 0;
 }
 
 /* ---------- IDs ---------- */
