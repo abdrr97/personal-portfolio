@@ -2,14 +2,18 @@
 :root {
     --mainColor: #eaeaea;
     --secondaryColor: #fff;
+
     --borderColor: #c1c1c1;
+
     --mainText: #0f0f0f;
     --secondaryText: #4b5156;
 
     --themeDotBorder: #24292e;
-    --previewShadowColor: rgb(236, 218, 162);
-    --shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 
+    --previewBg: rgb(251, 249, 243, 0.8);
+    --previewShadowColor: rgb(236, 218, 162);
+
+    --shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 }
 
 /* presets */
@@ -272,6 +276,17 @@ ul {
 }
 
 /* ---------- IDs ---------- */
+#submit-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    background-color: var(--buttonColor);
+    border: none;
+    cursor: pointer;
+}
+
 #contact-form>label {
     line-height: 2.4em;
 }
@@ -325,7 +340,7 @@ ul {
 #preview {
     width: 300px;
     border: 2px solid #17a2b8;
-    background-color: rgba(251, 249, 243, 0.8);
+    background-color: var(--previewBg);
     padding: 15px;
     position: relative;
 }

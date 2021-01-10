@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="default.css">
+    <link id="theme_style" rel="stylesheet">
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -34,10 +36,10 @@
                     <img id="profile-pic" src="/images/img.png" alt="">
                     <h5 style="text-align:center;line-height: 0;">Personalize Theme</h5>
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
                     <p id="settings-note">
                         *Theme settings will be save for <br> your next visit
@@ -154,7 +156,7 @@
                 <label for="message">Message</label>
                 <textarea type="text" class="input-field" rows="10" name="message" id="message"></textarea>
 
-                <button type="submit" id="submit-button">Send</button>
+                <button type="submit" id="submit-btn">Send</button>
             </form>
         </div>
     </section>
