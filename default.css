@@ -262,7 +262,30 @@ ul {
     margin: 0;
 }
 
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--secondaryColor);
+    border-radius: 5px;
+    border: 1px solid var(--borderColor);
+    font-size: 1rem;
+}
+
 /* ---------- IDs ---------- */
+#contact-form>label {
+    line-height: 2.4em;
+}
+
+#contact-form {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 15px;
+    border: 1px solid var(--borderColor);
+    border-radius: 5px;
+    background-color: var(--mainColor);
+}
 
 #skills {
     display: flex;
