@@ -29,12 +29,17 @@ h3,
 h4,
 h5,
 h6,
+a,
 strong {
     color: var(--mainText);
     font-family: 'Russo One', sans-serif;
     font-weight: 500;
 }
 
+a:hover {
+    letter-spacing: 1.2px;
+    transition: .5s all ease;
+}
 
 p,
 li,
@@ -253,8 +258,8 @@ ul {
     text-align: center;
     background-color: var(--secondaryColor);
     padding: 16px;
-    transition: .4s all ease-out;
     box-shadow: var(--shadow);
+    transition: .4s all ease-out;
 }
 
 .more:hover {
@@ -285,6 +290,16 @@ ul {
     background-color: var(--buttonColor);
     border: none;
     cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: .4s all ease-out;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#submit-btn:hover {
+    letter-spacing: 1.3px;
+    box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
 }
 
 #contact-form>label {
@@ -363,7 +378,7 @@ ul {
     height: 200px;
     object-fit: cover;
     background-color: var(--mainColor);
-    border: 2px solid var(--borderColor);
+    /* border: 2px solid var(--borderColor); */
 }
 
 #theme-options-wrapper {
